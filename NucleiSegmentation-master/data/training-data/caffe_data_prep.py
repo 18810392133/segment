@@ -6,7 +6,7 @@ import scipy.misc
 import os
 
 root = '/home/hp/weijunlin/NucleiSegmentation-master_original/'
-
+# test
 def saveIm(im, label, h, i, j, k):
     path = root + 'data/training-data/20x/2px/PrognosisTMABlock1_A_3_1_H&E/' + str(k) + '/'
     # path = root + 'nuclei-net/data/training-data/63_LLM_YR4_3_class_31/' + str(k) + '/'
