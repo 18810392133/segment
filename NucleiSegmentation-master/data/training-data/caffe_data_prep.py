@@ -29,7 +29,7 @@ file_name = root + 'data/training-data/20x/2px/PrognosisTMABlock1_A_3_1_H&E.jpg'
 mask_name = root + 'data/training-data/20x/2px/tm_PrognosisTMABlock1_A_3_1_H&E.png'
 
 w = 51          #window size
-p = (w-1)/2     #padding
+p = 25   #(w-1)/2     #padding
 
 im = mpimg.imread(file_name)
 # mask = mpimg.imread(mask_name).astype(int) # 2 classes
