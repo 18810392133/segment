@@ -8,12 +8,12 @@ layer {
     phase: TRAIN
   }
   image_data_param {
-    source: "/home/sanuj/temp_63_LLM_YR4_33/train.txt"
+    source: "/home/hp/weijunlin/NucleiSegmentation-master_original/caffe-scripts/nuclei/weijunlin_train.txt"
     batch_size: 200
   }
 }
 layer {
-  name: "nuclei"
+  name: "nucleis"
   type: "ImageData"
   top: "data"
   top: "label"
@@ -21,7 +21,7 @@ layer {
     phase: TEST
   }
   image_data_param {
-    source: "/home/sanuj/temp_63_LLM_YR4_33/test.txt"
+    source: "/home/hp/weijunlin/NucleiSegmentation-master_original/caffe-scripts/nuclei/weijunlin_test.txt"
     batch_size: 500
   }
 }
